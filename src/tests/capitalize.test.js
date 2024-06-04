@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { capitalize } from '../modules/capitalize';
 
 describe('Capitalize', () => {
-  it('works with any argument type', () => {
+  it('only accepts strings', () => {
     expect(capitalize()).toBe('');
     expect(capitalize(1)).toBe('');
     expect(capitalize({})).toBe('');
